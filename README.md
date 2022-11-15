@@ -52,3 +52,9 @@ hashcat -a 0 -m 17210 $pkzip2$1*1*2*0*15*9*4aac42f3*0*26*0*15*4aac*470b*6fa72c2b
 
 perl：http://www.activestate.com/activeperl
 python：https://www.python.org
+
+
+#
+#
+#
+YouTube教程  https://m.youtube.com/watch?v=ifrpYn_Gm54&feature=youtu.be
