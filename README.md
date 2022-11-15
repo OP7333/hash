@@ -22,10 +22,19 @@ test.docx:$office$*2013*100000*256*16*561f4dcaaac333e7c06d150f9ea5aea2*ef4e7b026
 hashcat.exe -m 9600 -a 3 $office$*2013*100000*256*16*561f4dcaaac333e7c06d150f9ea5aea2*ef4e7b026217124561ecb865b324eac4*e9ef4a859f2c81581db0e27d9ce48e6451b82cd1641941e8adc10dc5600969cb ?d?d?d?d -o out.txt                 Hashcat破解对应hash
 针对PDF密码的命令：
 
+#
+#
+
+
 
 perl pdf2john.pl test.pdf                       获取pdf加密文件的Hash指令(此处需要安装perl并配置环境变量)
 test.pdf:$pdf$4*4*128*-3904*0*16*55f913d20e34724fd70d3004f5e43166*32*7a29310ea5dc0276d34c1bef24595d61984a08eb759eaba56bd4887a260bbcce*32*de0c200bbe6887a980dc429edbdabc40f39a368841d804afefa726b2bd7c7b24   所得Hash返回结果
 hashcat.exe -m 10500 -a 3 $pdf$4*4*128*-3904*0*16*55f913d20e34724fd70d3004f5e43166*32*7a29310ea5dc0276d34c1bef24595d61984a08eb759eaba56bd4887a260bbcce*32*de0c200bbe6887a980dc429edbdabc40f39a368841d804afefa726b2bd7c7b24 ?l?l?l?l?l?l -o out.txt  Hashcat破解对应hash，此处?l对应一个小写字母
+
+#
+#
+
+
 
 针对Zip密码的命令：
 
@@ -36,6 +45,8 @@ hashcat -a 0 -m 17210 $pkzip2$1*1*2*0*15*9*4aac42f3*0*26*0*15*4aac*470b*6fa72c2b
     password.txt中存放密码字典
 
  
+
+#
 
 提醒：运行John the Ripper需要安装python和perl环境变量，如果命令出错，请自行下载安装python和perl
 
