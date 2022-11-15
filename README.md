@@ -13,6 +13,13 @@ rar2john.exe xxxx.rar   –获取hash值
 hashcat.exe -m 13000 -w 4 -a 3 $rar5$16$b88c1d7d2c96dc9d1b1a5ccdc5c25d50$15$8f0b287c982535c868bbff486ee9acd2$8$43907bfa03430471 -o password.txt  — 开始
 
 更多的参数说明：
+@ hashcat解压到桌面
+然后在下载john the ripper解压到桌面  
+打开john选择run文件夹把需要破解加密的文件夹拖进去“重命名成英文”然后在路径里面输入 cmd 进入输入rar2john.exe 破解文件名.rar –获取hash值
+将获取hash值复制到记事本然后直接关闭终端 打开hashcat文件夹 在路径直接输入cmd hashcat.exe -m 13000 -w 4 -a 3 将记事本保存代码粘贴进来 -o password.txt 然后把代码全部复制进去cmd敲一下回车 按一下s键可以看的到刷新介面看到刷新状态  破解成功后打开hashcat文件夹找到password.txt打开结尾；就是密码
+
+
+#
 
 针对Word密码的命令：
 
@@ -55,6 +62,15 @@ python：https://www.python.org
 
 
 #
+
+
+#-m 指定要破解的hash类型，如果不指定类型，则默认是MD5
+
+-a 指定要使用的破解模式，其值参考后面对参数。-a 0〞 字典攻击，"-a 1"组合攻击; “-a3〞 掩码攻击。
+
+-o。指定破解成功后的hash及所对应的明文密码的存放位置,可以用它把破解成功的hash写到指定的文件中
+
+
 #
-#
+
 YouTube教程  https://m.youtube.com/watch?v=ifrpYn_Gm54&feature=youtu.be
